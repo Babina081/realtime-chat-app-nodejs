@@ -3,42 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Real Time Chat App - Node App</title>
+    <title>Wassup chat app</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
+
   <body>
     <section class="chat__section">
       <div class="brand">
-        <img src="/wassup.png" alt="image" height="40" />
-        <h1>Whats up</h1>
+        <img height="40" src="/wassup.png" alt="" />
+        <h1>Wassup</h1>
       </div>
-      <div class="message__area">
-        <div class="message incoming">
-          <h4>Babina</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
-            facere.
-          </p>
-        </div>
-        <div class="message outgoing">
-          <h4>Sabina</h4>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
-            distinctio!
-          </p>
-        </div>
-      </div>
+      <div class="message__area"></div>
       <div>
         <textarea
-          name=""
-          id=""
+          id="textarea"
           cols="30"
           rows="1"
-          id="textarea"
-          placeholder="Write a message....."
+          placeholder="Write a message..."
         ></textarea>
       </div>
     </section>
+    <script src="/socket.io/socket.io.js"></script>
     <script src="/client.js"></script>
   </body>
 </html>
